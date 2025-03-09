@@ -1,0 +1,18 @@
+.excalidraw-pdf-container {
+    position: relative; /* To contain absolute positioned Excalidraw */
+}
+
+#excalidraw-container {
+    background: transparent; /* Make sure Excalidraw background is transparent to see PDF underneath */
+    pointer-events: auto; /* Ensure Excalidraw tools are interactive */
+}
+
+#excalidraw-container canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Optional: Style the Excalidraw toolbar if needed - for now, defaults are fine */
